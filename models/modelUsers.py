@@ -21,3 +21,4 @@ class User(Base):
     estatus = Column(Boolean)
     fecha_registro = Column(DateTime)
     fecha_modificacion = Column(DateTime)
+    correo = Column(String)
