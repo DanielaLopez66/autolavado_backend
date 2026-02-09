@@ -18,6 +18,7 @@ class Cliente(Base):
     direccion = Column(String(120))
     telefono = Column(String(15))
     correo = Column(String(80))
+    contrasena = Column(String(60))
     estatus = Column(Boolean)
     fecha_creacion = Column(DateTime)
     fecha_modificacion = Column(DateTime)
