@@ -10,6 +10,8 @@ class RolBase(BaseModel):
     """Base schema para roles."""
     nombre: str
     estatus: bool
+    fecha_creacion: Optional[datetime] = None
+    fecha_modificacion: Optional[datetime] = None
 
 
 class RolCreate(RolBase):
@@ -23,8 +25,7 @@ class RolUpdate(RolBase):
 class Rol(RolBase):
     """Schema completo para roles."""
     id: int
-    fecha_creacion: Optional[datetime] = None
-    fecha_modificacion: Optional[datetime] = None
+    
 
     class Config:
         """Configuración de Pydantic."""
